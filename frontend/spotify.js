@@ -6,9 +6,9 @@ async function init() {
     if (!response.ok) throw new Error("Server returned " + response.status);
     tracks = await response.json();
   } catch (err) {
-    console.error("❌ Could not load tracks:", err);
+    console.error("Could not load tracks:", err);
     document.querySelector(".card-contener").innerHTML =
-      `<p style="color:#ff6b6b;padding:1rem;">⚠️ Could not connect to server. Make sure server.js is running on port 3000.</p>`;
+      `<p style="color:#ff6b6b;padding:1rem;">Could not connect to server. Make sure server.js is running on port 3000.</p>`;
     return;
   }
 

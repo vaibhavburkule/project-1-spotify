@@ -82,14 +82,13 @@ async function insertTracks() {
     const db = client.db("spotifyClone");         // database name
     const collection = db.collection("tracks");   // collection name
 
-    // Pehle se data ho toh clear karo (optional)
     await collection.deleteMany({});
 
     const result = await collection.insertMany(tracks);
     console.log(`✅ ${result.insertedCount} tracks inserted!`);
 
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error(" Error:", err);
   } finally {
     await client.close();
   }
