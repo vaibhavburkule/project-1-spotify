@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="ly-option">
+                    <div class="your-lib nav-option">
+                        <img src="./proj-photo/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box1">
+                        <p class="par1">Create your first playlist</p>
+                        <p class="par2">It's easy, we'll help you</p>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box1">
+                        <p class="par1">Let's find some podcasts to follow</p>
+                        <p class="par2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="main">
+            <div class="main-nav">
+                <div class="main-icons">
+                    <i class="fa-solid fa-bars menu_icon"></i>
+                    <i class="fa-solid fa-less-than hide hov"></i>
+                    <i class="fa-solid fa-greater-than hide hov"></i>
+                </div>
+                <div class="stacky-badge">
+                    <button class="prem hide">
+                        Explore Premium
+                    </button>
+                    <button class="inst">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        Install App
+                    </button>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <!-- PLAYLIST -->
+            <div class="main-card">
+                <h2>My Playlist</h2>
+                <div class="card-contener">
+
+                    <div class="card" data-track="0">
+                        <img src="./images/agar tum saath ho/agar-tum-saath-ho.png" class="card-img">
+                        <p class="card-tital">Agar Tum Saath Ho</p>
+                        <p class="card-info">Arijit Singh</p>
+                    </div>
+
+                    <div class="card" data-track="1">
+                        <img src="./images/believer/believer.png" class="card-img">
+                        <p class="card-tital">Believer</p>
+                        <p class="card-info">Imagine Dragons</p>
+                    </div>
+
+                    <div class="card" data-track="2">
+                        <img src="./images/heart waves/heat-waves.png" class="card-img">
+                        <p class="card-tital">Heat Waves</p>
+                        <p class="card-info">Glass Animals</p>
+                    </div>
+
+                    <div class="card" data-track="3">
+                        <img src="./images/jo tum mere ho/jo-tum-mere-ho.png" class="card-img">
+                        <p class="card-tital">Jo Tum Mere Ho</p>
+                        <p class="card-info">Anuv Jain</p>
+                    </div>
+
+                    <div class="card" data-track="4">
+                        <img src="./images/kesariya/kesariya.png" class="card-img">
+                        <p class="card-tital">Kesariya</p>
+                        <p class="card-info">Arijit Singh</p>
+                    </div>
+
+                    <div class="card" data-track="5">
+                        <img src="./images/love me like you to/love-me-like-you-do.png" class="card-img">
+                        <p class="card-tital">Love Me Like You Do</p>
+                        <p class="card-info">Ellie Goulding</p>
+                    </div>
+
+                    <div class="card" data-track="6">
+                        <img src="./images/sahiba/sahiba.png" class="card-img">
+                        <p class="card-tital">Sahiba</p>
+                        <p class="card-info">Jasleen Royal</p>
+                    </div>
+
+                    <div class="card" data-track="7">
+                        <img src="./images/shap of you/shape-of-you.png" class="card-img">
+                        <p class="card-tital">Shape Of You</p>
+                        <p class="card-info">Ed Sheeran</p>
+                    </div>
+
+                    <div class="card" data-track="8">
+                        <img src="./images/stay with me/stay-with-me.png" class="card-img">
+                        <p class="card-tital">Stay With Me</p>
+                        <p class="card-info">Sam Smith</p>
+                    </div>
+
+                    <div class="card" data-track="9">
+                        <img src="./images/unstopable/unstoppable.png" class="card-img">
+                        <p class="card-tital">Unstoppable</p>
+                        <p class="card-info">Sia</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MUSIC PLAYER ===== -->
+        <!-- MUSIC PLAYER -->
+        <div class="music-player">
+          <div class="album">
+            <img src="./images/agar tum saath ho/agar-tum-saath-ho.png" id="player-img" class="card-img">
+            <div class="music-player-1par">
+              <p class="player-tital" id="player-title">Agar Tum Saath Ho</p>
+              <p class="player-info" id="player-artist">Arijit Singh</p>
+            </div>
+            <i class="fa-regular fa-heart hov" id="like-btn"></i>
+          </div>
+    
+          <div class="player">
+            <div class="play-control">
+              <i class="fa-solid fa-shuffle hov"></i>
+              <i class="fa-solid fa-backward-step hov"></i>
+              <i class="fa-solid fa-circle-play play-btn hov"></i>
+              <i class="fa-solid fa-forward-step hov"></i>
+              <i class="fa-solid fa-repeat hov"></i>
+            </div>
+            <div class="progress-bar">
+              <span>0:00</span>
+              <input type="range" min="0" max="100" value="0">
+              <span>0:00</span>
+            </div>
+          </div>
+    
+          <div class="controls">
+            <i class="fa-solid fa-list hov"></i>
+            <i class="fa-solid fa-desktop hov"></i>
+            <i class="fa-solid fa-volume-high hov"></i>
+            <input type="range" id="volume-bar" min="0" max="100" value="80">
+          </div>
+        </div>
+    </div>
+    
+      
+    <!-- AUDIO FILES -->
+    <audio id="audio-0" src="./audios/agar-tum-saath-ho.mp3"></audio>
+    <audio id="audio-1" src="./audios/believer.mp3"></audio>
+    <audio id="audio-2" src="./audios/heat-waves.mp3"></audio>
+    <audio id="audio-3" src="./audios/jo-tum-mere-ho.mp3"></audio>
+    <audio id="audio-4" src="./audios/kesariya.mp3"></audio>
+    <audio id="audio-5" src="./audios/love-me-like-you-do.mp3"></audio>
+    <audio id="audio-6" src="./audios/sahiba.mp3"></audio>
+    <audio id="audio-7" src="./audios/shape-of-you.mp3"></audio>
+    <audio id="audio-8" src="./audios/stay-with-me.mp3"></audio>
+    <audio id="audio-9" src="./audios/unstoppable.mp3"></audio>
+
+    <script src="spotify.js"></script>
+
+</body>
+</html>
